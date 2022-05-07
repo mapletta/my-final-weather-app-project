@@ -14,6 +14,20 @@
 div.row {
   margin: 0px auto;
 }
+div.col-2 {
+  text-align: center;
+  font-weight: bolder;
+  padding: 10px 20px 0px 20px;
+}
+p.emoji {
+  font-size: 45px;
+}
+ul {
+  list-style-type: none;
+}
+li.icon {
+  font-size: 75px;
+}
 input.button {
   background-color: #634039;
   color: #fff;
@@ -26,4 +40,7 @@ button {
   background-color: #634039;
   color: #fff;
   border-radius: 4px;
+}
+small {
+  font-size: 10px;
 }
