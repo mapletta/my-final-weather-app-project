@@ -31,19 +31,23 @@
           </form>
         </div>
         <br />
-        <h1 id="current-city">Warsaw</h1>
+        <h1 id="current-city">Lisbon</h1>
         <span class="city" id="current-date">Saturday, 7 May 2022</span>
 
         <div class="row">
           <div class="col-6">
-            <strong> <span class="temperature">22˚C</span></strong>
+            <strong class="temp">
+              <span id="current-temperature">22</span>˚C</strong
+            >
             <span class="icon">🌤 </span>
           </div>
           <div class="col-6">
             <ul>
-              <li class="sky">Clouds</li>
-              <li class="wind">Wind: 10 km/h</li>
-              <li class="humidity">Humidity: 60%</li>
+              <li class="sky" id="sky-description">Clouds</li>
+              <li class="wind">Wind: <span id="wind-speed"></span> km/h</li>
+              <li class="humidity">
+                Humidity: <span id="humidity-per"></span>%
+              </li>
             </ul>
           </div>
         </div>

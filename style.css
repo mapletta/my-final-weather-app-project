@@ -25,10 +25,15 @@ p.emoji {
 ul {
   list-style-type: none;
 }
+
+li {
+  text-transform: capitalize;
+  line-height: 25px;
+}
 span.icon {
   font-size: 75px;
 }
-span.temperature {
+strong.temp {
   font-size: 50px;
 }
 
