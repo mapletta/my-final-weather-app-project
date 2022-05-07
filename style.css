@@ -25,7 +25,7 @@ p.emoji {
 ul {
   list-style-type: none;
 }
-li.icon {
+span.icon {
   font-size: 75px;
 }
 span.temperature {
