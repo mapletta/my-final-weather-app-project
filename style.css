@@ -28,6 +28,10 @@ ul {
 li.icon {
   font-size: 75px;
 }
+span.temperature {
+  font-size: 50px;
+}
+
 input.button {
   background-color: #634039;
   color: #fff;
