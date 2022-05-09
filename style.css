@@ -1,16 +1,17 @@
 .weatherapp {
-  background: linear-gradient(
-    87.4deg,
-    rgb(255, 241, 165) 1.9%,
-    rgb(200, 125, 76) 49.7%,
-    rgb(83, 54, 54) 100.5%
+  background: radial-gradient(
+    circle at 5.3% 17.2%,
+    rgb(255, 208, 253) 0%,
+    rgb(255, 237, 216) 90%
   );
+
   border: 3px solid rgb(67, 39, 39) 100.2%;
   border-radius: 5px;
   max-width: 600px;
   margin: 50px auto;
   padding: 30px;
 }
+
 div.row {
   margin: 0px auto;
 }
@@ -38,17 +39,20 @@ strong.temp {
 }
 
 input.button {
-  background-color: #634039;
-  color: #fff;
+  background-color: rosybrown;
+  color: black;
   border-radius: 4px;
+  border: #ff9a96;
 }
 input.search {
   border-radius: 4px;
+  border: #ff9a96;
 }
 button {
-  background-color: #634039;
-  color: #fff;
+  background-color: rosybrown;
+  color: black;
   border-radius: 4px;
+  border: white;
 }
 div.github {
   font-size: 10px;
