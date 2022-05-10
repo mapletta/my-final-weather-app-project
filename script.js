@@ -58,17 +58,19 @@ function displayTemperature(response) {
   );
 }
 
-function search(event) {
-  event.preventDefault();
-  let city = document.querySelector("#city-input");
-  console.log(city.value);
+function search(city) {
+  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
 }
 
-let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-let city = "Warsaw";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#city-input");
+  search(city.value);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+search("Paris");
 
 let form = document.querySelector("#search-form");
-form.addEventListener("submit", search);
+form.addEventListener("submit", handleSubmit);
