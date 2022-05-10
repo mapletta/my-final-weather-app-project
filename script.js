@@ -70,7 +70,7 @@ function handleSubmit(event) {
   search(city.value);
 }
 
-search("Paris");
+search("Warsaw");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
