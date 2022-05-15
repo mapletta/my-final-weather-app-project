@@ -18,10 +18,11 @@ div.row {
 div.col-2 {
   text-align: center;
   font-weight: bolder;
-  padding: 10px 20px 0px 20px;
+  padding: 10px 20px 0px 65px;
 }
 div.weather-forecast {
   margin-top: 20px;
+  margin: 0px auto;
   text-align: center;
 }
 
