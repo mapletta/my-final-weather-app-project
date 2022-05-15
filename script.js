@@ -62,7 +62,7 @@ function displayForecast() {
     forecastHTML +
     `
             <div class="col-2">
-              <div class="weather-forcast-date">Mon</div>
+              <div class="weather-forcast-date">Tue</div>
               <div class="emoji">
                 <img
                   src="http://openweathermap.org/img/wn/10d@2x.png"
