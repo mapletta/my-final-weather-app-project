@@ -38,6 +38,26 @@ function formatDate(timestamp) {
   return `${day}, ${dayMonth} ${month} ${year} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = `
+
+ <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2">
+              <div class="weather-forcast-date">Mon</div>
+              <div class="emoji">
+                <img
+                  src="http://openweathermap.org/img/wn/10d@2x.png"
+                  alt=""
+                  width="45"
+                />
+              </div>
+              <p class="next-week-temperature">14˚C</p>
+            </div>
+`;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let cityElement = document.querySelector("#current-city");
@@ -52,6 +72,7 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   let weatherIconElement = document.querySelector("#weather-icon");
+
   weatherIconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -72,6 +93,7 @@ function handleSubmit(event) {
 
 search("Warsaw");
 
+displayForecast();
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
